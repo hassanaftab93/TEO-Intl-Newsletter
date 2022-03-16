@@ -1,0 +1,12 @@
+LINE 878 In index.html
+
+Add 5 Social Images Files in Images folder, Names must be as follows
+
+1.  Email        :   socials1.png
+2.  LinkedIn     :   socials2.png
+3.  Facebook     :   socials3.png
+4.  Instagram    :   socials4.png
+5.  Youtube      :   socials5.png
+
+TODO:
+    Include href links in images.
