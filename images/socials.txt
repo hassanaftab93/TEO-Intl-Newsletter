@@ -1,4 +1,4 @@
-LINE 878 In index.html
+LINE In index.html
 
 Add 5 Social Images Files in Images folder, Names must be as follows
 
