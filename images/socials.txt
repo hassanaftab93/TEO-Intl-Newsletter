@@ -7,6 +7,8 @@ Add 5 Social Images Files in Images folder, Names must be as follows
 3.  Facebook     :   socials3.png
 4.  Instagram    :   socials4.png
 5.  Youtube      :   socials5.png
+6.  Logo         :   logo.png
+7.  Promo        :   promo.png
 
 TODO:
     Include href links in images.
