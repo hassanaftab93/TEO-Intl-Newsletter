@@ -6,7 +6,7 @@
 
     * section-banner
 
-    * section-newtech
+    * section-services
 
     * section-casestudies
 

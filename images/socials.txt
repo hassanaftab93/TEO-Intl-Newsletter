@@ -12,3 +12,6 @@ Add 5 Social Images Files in Images folder, Names must be as follows
 
 TODO:
     Include href links in images.
+
+    Tech Video:
+    https://www.youtube.com/watch?v=68N_3ru8Dsk
