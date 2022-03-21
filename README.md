@@ -24,3 +24,6 @@
 
     * section-policy
 
+## To get Current View:
+
+* [Click Here](https://htmlpreview.github.io/?https://github.com/hassanaftab93/TEO-Intl-Newsletter/blob/2b1bc98cf097e2f50d632bdb5854529d128e1bc3/index.html)
