@@ -6,1824 +6,494 @@
     <meta name="format-detection" content="telephone=no" />
     <title>TEO International Newsletter</title>
     <script src="/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script>
+  
     <style type="text/css">
-      #outlook a { padding: 0; }
-      body{ width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; }
-      .ExternalClass { width: 100%; }
-      .ExternalClass, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
-      .ExternalClass p { line-height: inherit; }
-
-      #body-layout { margin: 0; padding: 0; width: 100% !important; line-height: 100% !important; }
-
-      img { display: block; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
-      a img { border: none; }
-      table td { border-collapse: collapse; }
-      table { border-collapse: collapse;}
-
-      a { color: inherit; outline: none; text-decoration: none; }
-    </style>
-    <style type="text/css">
-      @media only screen and (max-width: 599px){
-
-        div[class="block"] {
-          width: 100% !important;
-          max-width: 375px !important;
-        }
-
-        div[class="full-block"] {
-          width: 100% !important;
-          max-width: none !important;
-        }
-
-        table[class="full-width"] {
-          width: 100% !important;
-        }
-
-        table[class="center"],
-        td[class="center"] {
-          text-align: center !important;
-          float: none !important;
-        }
-
-        table[class="remove"],
-        tr[class="remove"],
-        span[class="remove"] {
-          display: none;
-        }
+      body{ 
+        width:100% !important; 
+        -webkit-text-size-adjust:100%;
+        -ms-text-size-adjust:100%; 
+        margin:0;
+        padding:0; }
+/*----- Containers --------*/
+      #newsletterContainer{
+        margin: auto;
       }
+      #teo-logoContainer{
+        width: 240px;
+        text-align:center;
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        padding: 45px 0px;
+      }
+      #socialIconsContainer{
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+        margin-top:40px;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+ /*------ Sections -------*/
+      section{
+        padding:0px 50px;
+        text-align: center;
+      }
+      #section-banner{
+        background-color: #468199;
+        padding: 20px 0px;
+      }
+      #section-services{
+        margin:0;
+        padding: 0px 60px;
+        padding-bottom: 50px;
+        background-color: #468199;
+      }
+      #section-casestudies{
+        background-color: #468199;
+        padding:0px 50px;
+      }
+      #section-casestudy1{
+        max-width: 250px;
+        text-align: justify;
+        display: inline-block;
+      }
+      #section-testimonials{
+        padding: 10px 20px;
+        margin: 0px;
+        background-color: #468199;
+      }
+      #section-video{
+        padding: 80px 20px;
+        background-color: #d5d8da93;
+      }
+      #section-webinar{
+        background-color: #468199;
+        padding: 40px;
+      }
+      #section-social{
+        padding: 40px 60px;
+        background-color: #d5d8da93;
+      }
+      #section-footer{
+        background: #f5f5f5;
+        padding: 30px 70px;
+      }
+      #section-policy{
+        padding: 30px;
+        color: #424242;
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 700;
+        text-align: center;
+      }
+/*----- Text --------*/
+      .heading{
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+        font-weight: 700;
+        text-align: center;
+        margin: 0px;
+      }
+      .paragraph{
+        color: #3d3d3d;
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        text-align: center;
+      }
+      .servicesHeading{
+        color: #3d3d3d;
+        font-size: 25px;
+      }
+      .caseStudiesHeading{
+        color: #3d3d3d;
+        font-size: 30px;
+        line-height: 40px;
+      }
+      .testimonialsHeading{
+        color: #3d3d3d;
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      .videoHeading{
+        color: #ff6b5a;
+        font-size: 36px;
+        line-height: 36px;
+        text-transform: uppercase;
+        margin-bottom:10px;
+      }
+      .webinarHeading{
+        color: #ffffff;
+        font-size: 30px;
+        line-height: 40px;
+        margin: 10px 0px;
+      }
+      .webinarSubHeading{
+        color: #ffffff;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: left;
+        text-transform: uppercase
+      }
+      .webinarParagraph{
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: left;
+        margin: 5px 0px;
+        text-transform: uppercase
+      }
+      .webinarSubParagraph{
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: left;
+        font-weight: 400;
+        margin:10px 0px;
+      }
+      .socialHeading{
+        font-size: 30px;
+        line-height: 30px;
+      }
+      .address{
+        color: #3f3f3f;
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .footerText{
+        color: #606060;
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        text-align: center;
+      }
+/*------ Buttons -------*/
+      .button{
+        border-radius: 4px;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 14px;
+        border:none;
+        display: block;
+        margin: 0 auto; 
+        text-transform: uppercase;
+        font-family: 'Trebuchet MS', Helvetica, sans-serif;
+      }
+      .button-services{
+        background: #3fcecf;
+        font-weight: 400;
+        width: 100%;
+        height: 45px;
+      }
+      .button-caseestudy{
+        background: #3fcecf;
+        font-weight: 400;
+        width: 35%;
+        height: 45px;
+      }
+      .button-video{
+        background: #ff6453;
+        font-weight: 700;
+        padding: 14px 23px;
+        margin: 20px auto;
+      }
+      .button-webinar{
+        background: white;
+        color: #468199;
+        font-weight: 700;
+        width: 45%;
+        height: 45px;
+        margin: 0px;
+        margin-top: 20px;
+      }
+/*------ Images -------*/
+      img {   
+        display: block;
+        margin: auto; 
+      }
+      .user_img{
+        padding: 10px 0px;
+      }
+      .casestudy1_img{
+        width: 100%;
+      }
+      .teo-logo{
+        width: 100%; 
+      }
+      .teoImg{
+        margin-bottom:30px;
+      }
+      .icon_mail{
+        padding:40px 0px;
+      }
+      .social-icon{
+        height: 30px;
+        width: 30px;
+        margin: 0px 10px;
+      }
+/*------ Lines -------*/
+      .underline{
+        border-bottom: 2px solid #3d3d3d;
+        width: 60%;
+        display: block;
+        margin: auto;
+      }
+      .welcome-underlined{
+        border-bottom: 1px solid #3d3d3d;
+        margin:28px auto;
+      }
+      .webinar-underlined{
+        border-bottom: 1px solid #bae5ce;
+        margin: 30px auto;
+      }
+/*------ Extras -------*/
+      .mailURL{
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: block; 
+        text-align: center;
+        text-decoration: none;
+        color: #fdb917;
+      }
+      hr{
+        height:2px;
+        margin: 10px 60px;
+        border-width:0;
+        color:black;
+        background-color:black;
+      }
+      ul{
+         color: #3d3d3d;
+         font-family: 'Trebuchet MS', Helvetica, sans-serif;
+         font-size: 14px;
+         line-height: 22px;
+         font-weight: 400;
+         display:inline-block;
+      }
+      td{
+        padding: 25px;
+      }
+      .footerLink{
+        text-decoration: underline;
+         color: #ff6453;
+      }
+/*------ Screen Responsiveness -------*/
+    @media only screen and (max-width: 600px) {/* Extra small devices */
+      #newsletterContainer {width: 80%;}
+      .teo-logo{width: 80%;}
+      .user_img{width: 60%;}
+      .underline{width: 80%;}
+      .button-caseestudy{width: 100%;}
+      #section-casestudy1 { padding:70px 20px; }
+      .webinarSubHeading{text-align: center;}
+      .webinarParagraph{text-align: center;}
+      .webinarSubParagraph{text-align: center;}
+      .button-webinar{margin: auto;}
+      .mailURL{font-size: 12px;}
+      .socialHeading{font-size: 25px;}
+      .address{font-size: 13px; line-height: 12px;}
+      #section-webinar {
+      background-color: #468199;
+      padding: 40px 20px;
+      }
+      tr{
+      display: flex;
+      flex-direction: column;
+      }
+    }
+    @media only screen and (min-width: 600px) { /* small devices */
+      #newsletterContainer {width: 60%;}
+      .button-caseestudy{width: 35%;}
+    }
+    @media only screen and (min-width: 768px) {/* Medium devices */
+      #newsletterContainer {width: 75%;}
+    } 
+    @media only screen and (min-width: 992px) {/* Large devices */
+      #newsletterContainer {width: 60%;}
+    } 
+    @media only screen and (min-width: 1200px) {/*Extra large */
+      #newsletterContainer {width: 40%;}
+    }
     </style>
   </head>
-  <body id="body-layout">
-    <table
-      width="100%"
-      align="center"
-      cellpadding="0"
-      cellspacing="0"
-      border="0"
-    >
-      <tr>
-        <td align="center" valign="top" style="background: #ffffff;">
-          <table id="section-banner" align="center" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td
-                width="600"
-                align="center"
-                valign="top"
-                style="background: #468199;"
-              >
-                <table
-                  width="100%"
-                  align="center"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td align="center" valign="top" style="padding: 0 20px;">
-                      <table
-                        width="100%"
-                        align="center"
-                        cellpadding="0"
-                        cellspacing="0"
-                        border="0"
-                      >
-                        <tr>
-                          <td
-                            height="79"
-                            style="height: 79px; line-height:79px;"
-                          ></td>
-                        </tr>
-                        <tr>
-                          <td align="center" valign="top">
-                            <table
-                              align="center"
-                              cellpadding="0"
-                              cellspacing="0"
-                              border="0"
-                            >
-                              <tr>
-                                <td
-                                  width="240"
-                                  align="center"
-                                  valign="top"
-                                  style="line-height: 0px !important;"
-                                >
-                                  <a
-                                    style="text-decoration: none; display: block;"
-                                    href="https://www.teo-intl.com/"
-                                    ><img
-                                      src="https://www.teo-intl.com/wp-content/uploads/2020/10/Teo_logo.png"
-                                      alt="logo"
-                                      width="100%"
-                                      style="width: 100%; max-width: 100%;"
-                                  /></a>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            height="42"
-                            style="height: 42px; line-height:42px;"
-                          ></td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-          <table id="section-services" align="center" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td
-                width="600"
-                align="center"
-                valign="top"
-                style="background: #468199;"
-              >
-                <table
-                  width="100%"
-                  align="center"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td align="center" valign="top" style="padding: 0 20px;">
-                      <table
-                        width="100%"
-                        align="center"
-                        cellpadding="0"
-                        cellspacing="0"
-                        border="0"
-                      >
-                        <tr>
-                          <td align="center" valign="top">
-                            <table
-                              align="center"
-                              cellpadding="0"
-                              cellspacing="0"
-                              border="0"
-                            >
-                              <tr>
-                                <td width="480" align="center" valign="top">
-                                  <table
-                                          align="center"
-                                          cellpadding="0"
-                                          cellspacing="0"
-                                          border="0"
-                                        >
-                                          <tr>
-                                            <td
-                                              width="324"
-                                              align="center"
-                                              valign="top"
-                                              style="background: #3d3d3d;"
-                                            >
-                                              <table
-                                                width="100%"
-                                                align="center"
-                                                cellpadding="0"
-                                                cellspacing="0"
-                                                border="0"
-                                              >
-                                                <tr>
-                                                  <td
-                                                    height="1"
-                                                    style="height: 1px; line-height:1px;"
-                                                  ></td>
-                                                </tr>
-                                              </table>
-                                            </td>
-                                          </tr>
-                                        </table>
-                                  <table
-                                    width="100%"
-                                    align="center"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                    border="0"
-                                  >
-                                    <tr>
-                                      <td
-                                        height="25"
-                                        style="height: 5px; line-height:77px;"
-                                      ></td>
-                                    </tr>
-                                    <tr>
-                                      <td
-                                        align="center"
-                                        valign="top"
-                                        style="color: #3d3d3d; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 25px; line-height: 50px; font-weight: 700;"
-                                      >
-                                        Welcome!
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td
-                                        align="center"
-                                        valign="top"
-                                        style="color: #3d3d3d; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 14px; line-height: 22px; font-weight: 400;"
-                                      >
-                                      TEO A/S (Talented Earth Organization) is a Danish software company,
-                                      which was established in 2007.
-                                      We provide quality solutions for both private and public companies,
-                                      and our core competencies lie in the development of complex systems and mobile app solutions.
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td
-                                        height="26"
-                                        style="height: 26px; line-height:26px;"
-                                      ></td>
-                                    </tr>
-                                    <tr>
-                                      <td align="center" valign="top">
-                                        <table
-                                          align="center"
-                                          cellpadding="0"
-                                          cellspacing="0"
-                                          border="0"
-                                        >
-                                          <tr>
-                                            <td
-                                              width="324"
-                                              align="center"
-                                              valign="top"
-                                              style="background: #3d3d3d;"
-                                            >
-                                              <table
-                                                width="100%"
-                                                align="center"
-                                                cellpadding="0"
-                                                cellspacing="0"
-                                                border="0"
-                                              >
-                                                <tr>
-                                                  <td
-                                                    height="1"
-                                                    style="height: 1px; line-height:1px;"
-                                                  ></td>
-                                                </tr>
-                                              </table>
-                                            </td>
-                                          </tr>
-                                        </table>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td
-                                        height="33"
-                                        style="height: 33px; line-height:33px;"
-                                      ></td>
-                                    </tr>
-                                    <tr>
-                                      <td
-                                        align="center"
-                                        valign="top"
-                                        style="color: #3d3d3d; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 25px; line-height: 22px; font-weight: 700;"
-                                      >
-                                        Our Services
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td
-                                        height="0"
-                                        style="height: 5px; line-height:0px;"
-                                      ></td>
-                                    </tr>
-                                    <tr>
-                                      <td
-                                        align="center"
-                                        valign="top"
-                                        style="color: #3d3d3d; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 14px; line-height: 22px; font-weight: 400;"
-                                      >
-                                      TEO provides a wide range of services that cover all your IT needs.
-                                      Our services help increase productivity, reduce cost, and optimize resources.
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td
-                                        height="33"
-                                        style="height: 33px; line-height:33px;"
-                                      ></td>
-                                    </tr>
-                                    <tr id="list-services">
-                                      <table>
-                                        <tr>
-                                          <list
-                                            align="center"
-                                            style="color: #3d3d3d;
-                                            font-family: 'Trebuchet MS', Helvetica, sans-serif;
-                                            font-size: 14px;
-                                            line-height: 22px;
-                                            font-weight: 400;"
-                                            >
-                                            <li>Fixed Term</li>
-                                            <li>Extended Team</li>
-                                            <li>Mobile Development</li>
-                                            <li>Software Development</li>
-                                          </list>
-                                        </tr>
-                                      </table>
-                                    </tr>
-                                    <tr>
-                                      <td
-                                        height="33"
-                                        style="height: 33px; line-height:33px;"
-                                      ></td>
-                                    </tr>
-                                    <tr>
-                                      <td
-                                          id="button-services"
-                                          align="center"
-                                          valign="top"
-                                          style="border-radius: 4px; overflow: hidden;background: #3fcecf;"
-                                        >
-                                          <table
-                                            width="100%"
-                                            align="center"
-                                            cellpadding="0"
-                                            cellspacing="0"
-                                            border="0"
-                                          >
-                                            <tr>
-                                              <td
-                                                height="15"
-                                                style="height: 15px; line-height:15px;"
-                                              ></td>
-                                            </tr>
-                                            <tr>
-                                              <td
-                                                align="center"
-                                                valign="top"
-                                                style="padding: 0 22px;color: #ffffff; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 14px; line-height: 14px; font-weight: 400; text-transform: uppercase;"
-                                              >
-                                                <span style="color: #ffffff;"
-                                                  ><a
-                                                    style="text-decoration: none; color: #ffffff;"
-                                                    href="https://www.teo-intl.com/services-en/"
-                                                    >Click here for details</a
-                                                  ></span
-                                                >
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td
-                                                height="15"
-                                                style="height: 15px; line-height:15px;"
-                                              ></td>
-                                            </tr>
-                                          </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                      <td
-                                        height="54"
-                                        style="height: 54px; line-height:54px;"
-                                      ></td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-          <table
-            align="center"
-            cellpadding="0"
-            cellspacing="0"
-            border="0"
-          >
-            <tr>
-              <td
-                width="324"
-                align="center"
-                valign="top"
-                style="background: #ffffff;"
-              >
-                <table
-                  width="100%"
-                  align="center"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td
-                      height="1"
-                      style="height: 1px; line-height:1px;"
-                    ></td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-          
-          <table id="section-casestudies" align="center" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td
-                width="600"
-                align="center"
-                valign="top"
-                style="background: #468199;"
-              >
-                <table
-                  width="100%"
-                  align="center"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td align="center" valign="top" style="padding: 0 20px;">
-                      <table
-                        width="100%"
-                        align="center"
-                        cellpadding="0"
-                        cellspacing="0"
-                        border="0"
-                      >
-                        <tr>
-                          <td align="center" valign="top">
-                            <table
-                              align="center"
-                              cellpadding="0"
-                              cellspacing="0"
-                              border="0"
-                            >
-                              <tr>
-                                <td width="500" align="center" valign="top">
-                                  <table
-                                    width="100%"
-                                    align="center"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                    border="0"
-                                  >
-                                    <tr>
-                                      <td
-                                        height="51"
-                                        style="height: 51px; line-height:51px;"
-                                      ></td>
-                                    </tr>
-                                    <tr>
-                                      <td
-                                        align="center"
-                                        valign="top"
-                                        style="color: #3d3d3d; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 30px; line-height: 40px; font-weight: 700;"
-                                      >
-                                        Our smart solutions make your ideas come
-                                        true!
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td
-                                        height="7"
-                                        style="height: 7px; line-height:7px;"
-                                      ></td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <table
-                  id="holder-casestudies"
-                  width="100%"
-                  align="center"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td
-                      align="center"
-                      valign="top"
-                      style="font-size: 0px !important;"
-                      border="0"
-                    >
-                      <!--[if (gte mso 9)|(IE)]><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"><tr><!
-                      [endif]-->[endif]--><!--[if (gte mso 9)|(IE)]><td width="280" align="center" valign="top" style="padding: 0 0 0 0;"><![endif]-->
-                      <div
-                        style="width: 100%; display: inline-block; vertical-align: top; font-size: normal; max-width: 280px;"
-                        class="block"
-                      >
-                        <table
-                          width="100%"
-                          align="center"
-                          cellpadding="0"
-                          cellspacing="0"
-                          border="0"
-                        >
-                          <tr>
-                            <td
-                              align="center"
-                              valign="top"
-                              style="padding: 0 20px;"
-                            >
-                              <table
-                              id="section-casestudy1"
-                                width="100%"
-                                align="center"
-                                cellpadding="0"
-                                cellspacing="0"
-                                border="0"
-                              >
-                                <tr>
-                                  <td
-                                    height="60"
-                                    style="height: 60px; line-height:60px;"
-                                  ></td>
-                                </tr>
-                                <tr>
-                                  <td
-                                    align="center"
-                                    valign="top"
-                                    style="line-height: 0px !important;"
-                                  >
-                                    <img
-                                      src="images/casestudy1.png"
-                                      alt="casestudy1"
-                                      width="90%"
-                                    />
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td
-                                    height="39"
-                                    style="height: 39px; line-height:39px;"
-                                  ></td>
-                                </tr>
-                                <tr>
-                                  <td
-                                    align="center"
-                                    valign="top"
-                                    style="color: #3d3d3d; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 14px; line-height: 22px; font-weight: 700; text-transform: uppercase;"
-                                  >
-                                    PLOT
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td
-                                    height="14"
-                                    style="height: 14px; line-height:14px;"
-                                  ></td>
-                                </tr>
-                                <tr>
-                                  <td
-                                    align="justify"
-                                    valign="top"
-                                    style="color: #3d3d3d; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 14px;  line-height: 22px; font-weight: 400;"
-                                  >
-                                  TEO designed and developed a parking app for Plot, 
-                                  which aims to provide more and better parking spaces which in turn means less traffic, 
-                                  less pollution, and fewer frustrations. 
-                                  Our goal was to develop the app for both Android and iOS, 
-                                  and we wrote the back end in Microsoft .Net. 
-                                  The app makes it easier for people to park their cars, 
-                                  and to report cars that are parked incorrectly. 
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td
-                                    height="23"
-                                    style="height: 23px; line-height:23px;"
-                                  ></td>
-                                </tr>
-                                <tr>
-                                  <td align="center" valign="top">
-                                    <table
-                                      align="center"
-                                      cellpadding="0"
-                                      cellspacing="0"
-                                      border="0"
-                                    >
-                                      <tr>
-                                        <td
-                                          align="center"
-                                          valign="top"
-                                          style="border-radius: 4px; overflow: hidden;background: #3fcecf;"
-                                        >
-                                          <table
-                                            width="100%"
-                                            align="center"
-                                            cellpadding="0"
-                                            cellspacing="0"
-                                            border="0"
-                                          >
-                                            <tr>
-                                              <td
-                                                height="15"
-                                                style="height: 15px; line-height:15px;"
-                                              ></td>
-                                            </tr>
-                                            <tr>
-                                              <td
-                                                align="center"
-                                                valign="top"
-                                                style="padding: 0 22px;color: #ffffff; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 14px; line-height: 14px; font-weight: 400; text-transform: uppercase;"
-                                              >
-                                                <span style="color: #ffffff;"
-                                                  ><a
-                                                    style="text-decoration: none; color: #ffffff;"
-                                                    href="index.html"
-                                                    >more</a
-                                                  ></span
-                                                >
-                                              </td><!--ADD LINK ABOVE FOR PLOT CASE STUDY-->
-                                            </tr>
-                                            <tr>
-                                              <td
-                                                height="15"
-                                                style="height: 15px; line-height:15px;"
-                                              ></td>
-                                            </tr>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                      </div>
-                      <!--[if (gte mso 9)|(IE)]></td><![endif]-->
-                      <!--[if (gte mso 9)|(IE)]><td width="280" align="center" valign="top" style="padding: 0 0 0 0;"><![endif]-->
-                      
-                      <!--div here for same row-->
-                      
-                      <!--[if (gte mso 9)|(IE)]></td><!
-                      [endif]-->[endif]--><!--[if (gte mso 9)|(IE)]></tr></table><![endif]-->
-                    </td>
-                  </tr>
-                </table>
-                <table
-                  width="100%"
-                  align="center"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td
-                      align="center"
-                      valign="top"
-                      style="font-size: 0px !important;"
-                    >
-                      <!--[if (gte mso 9)|(IE)]><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"><tr><!
-                      [endif]-->[endif]--><!--[if (gte mso 9)|(IE)]><td width="280" align="center" valign="top" style="padding: 0 0 0 0;"><![endif]-->
-                      
-                      <!--div here for 2nd row of case studies-->
-                      
-                      <!--[if (gte mso 9)|(IE)]></td><![endif]-->
-                      <!--[if (gte mso 9)|(IE)]><td width="280" align="center" valign="top" style="padding: 0 0 0 0;"><![endif]-->
 
-                      <!--div here for same row-->
 
-                      <!--[if (gte mso 9)|(IE)]></td><!
-                      [endif]-->[endif]--><!--[if (gte mso 9)|(IE)]></tr></table><![endif]-->
-                    </td>
-                  </tr>
-                </table>
-                <table
-                  width="100%"
-                  align="center"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td
-                      height="99"
-                      style="height: 99px; line-height:99px;"
-                    ></td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-          <tr>
-            <td align="center" valign="top">
-              <table
-                align="center"
-                cellpadding="0"
-                cellspacing="0"
-                border="0"
-              >
-                <tr>
-                  <td
-                    width="324"
-                    align="center"
-                    valign="top"
-                    style="background: #ffffff;"
-                  >
-                    <table
-                      width="100%"
-                      align="center"
-                      cellpadding="0"
-                      cellspacing="0"
-                      border="0"
-                    >
-                      <tr>
-                        <td
-                          height="1"
-                          style="height: 1px; line-height:1px;"
-                        ></td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <table id="section-testimonials" align="center" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td
-                width="600"
-                align="center"
-                valign="top"
-                style="background: #468199;"
-              >
-                <table
-                  width="100%"
-                  align="center"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td
-                      align="center"
-                      valign="top"
-                      style="background-image: url(images/bgimg1.png); background-repeat: no-repeat; background-position: 50% 0;background-position: 0 0;"
-                      background="images/bgimg1.png"
-                    >
-                      <table
-                        width="100%"
-                        align="center"
-                        cellpadding="0"
-                        cellspacing="0"
-                        border="0"
-                      >
-                        <tr>
-                          <td
-                            align="center"
-                            valign="top"
-                            style="padding: 0 20px;"
-                          >
-                            <table
-                              align="center"
-                              cellpadding="0"
-                              cellspacing="0"
-                              border="0"
-                            >
-                              <tr>
-                                <td width="478" align="center" valign="top">
-                                  <table
-                                    align="left"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                    border="0"
-                                  >
-                                    <tr>
-                                      <td
-                                        width="316"
-                                        align="center"
-                                        valign="top"
-                                      >
-                                        <table
-                                          width="100%"
-                                          align="center"
-                                          cellpadding="0"
-                                          cellspacing="0"
-                                          border="0"
-                                        >
-                                        
-                                        </table>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                                <div 
-                                    id="container"
-                                    align="center"
-                                    >
-                                    <h2 style="color: #3d3d3d";>
-                                      Testimonials
-                                    </h2>
-                                    <div id="user1"> <img id="user1_img" src="https://www.teo-intl.com/wp-content/uploads/2020/09/client-testominial-1.png">
-                                        <p class="name" style="color: #3d3d3d">Claus Nyboe</p>
-                                        <p class="designation" style="color: #3d3d3d">CEO, Auto IT</p>
-                                        <p class="cursor" style="color: #3d3d3d">''</p>
-                                        <p class="text" align="justify" style="color: #3d3d3d">
-                                            All good cooperation requires trust. 
-                                            It is important that there is trust between those involved in the project that deadlines are met 
-                                            and that new resources are recruited quickly. All this works really well in TEO cooperation.
-                                        </p>
-                                    </div> 
-                                  </div>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-          <table id="section-video" align="center" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td
-                width="600"
-                align="center"
-                valign="top"
-                style="background: #ffffff;"
-              >
-                <table
-                  align="center"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td
-                      width="540"
-                      align="center"
-                      valign="top"
-                      style="padding: 0 20px;"
-                    >
-                      <table
-                        width="100%"
-                        align="center"
-                        cellpadding="0"
-                        cellspacing="0"
-                        border="0"
-                      >
-                        <tr>
-                          <td
-                            height="54"
-                            style="height: 54px; line-height:54px;"
-                          ></td>
-                        </tr>
-                        <tr>
-                          <td
-                            align="center"
-                            valign="top"
-                            style="line-height: 0px !important;"
-                          >
-                            <img
-                              src="https://scontent.fisb17-1.fna.fbcdn.net/v/t1.6435-9/40208716_1881706108539288_4087376945170350080_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=e3f864&_nc_eui2=AeHQ4tc2BPp6MDYIVifDGowNVlRZWE0PgsJWVFlYTQ-Cwj5MGNTJbzkavhxPXXgIiCs&_nc_ohc=lG3VHx-2DEUAX-z2MM3&_nc_ht=scontent.fisb17-1.fna&oh=00_AT_4VfgwKJOkOOxQRWX24ZADxETM2VQaeMNYqg7YiYzp5Q&oe=6259D7F7"
-                              alt="img5"
-                              width="100%"
-                              style="width: 100%; max-width: 100%;"
-                            />
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            height="25"
-                            style="height: 25px; line-height:25px;"
-                          ></td>
-                        </tr>
-                        <tr>
-                          <td
-                            align="center"
-                            valign="top"
-                            style="color: #ff6b5a; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 36px;  line-height: 36px; font-weight: 700; text-transform: uppercase;"
-                          >
-                            Best way to present
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            height="2"
-                            style="height: 2px; line-height:2px;"
-                          ></td>
-                        </tr>
-                        <tr>
-                          <td
-                            align="center"
-                            valign="top"
-                            style="color: #737373; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 30px;  line-height: 36px; font-weight: 400;"
-                          >
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/68N_3ru8Dsk?controls=0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            height="20"
-                            style="height: 20px; line-height:20px;"
-                          ></td>
-                        </tr>
-                        <tr>
-                          <td align="center" valign="top">
-                            <table
-                              align="center"
-                              cellpadding="0"
-                              cellspacing="0"
-                              border="0"
-                            >
-                              <tr>
-                                <td
-                                  align="center"
-                                  valign="top"
-                                  style="border-radius: 4px; overflow: hidden;background: #ff6453;"
-                                >
-                                  <table
-                                    width="100%"
-                                    align="center"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                    border="0"
-                                  >
-                                    <tr>
-                                      <td
-                                        height="15"
-                                        style="height: 15px; line-height:15px;"
-                                      ></td>
-                                    </tr>
-                                    <tr>
-                                      <td
-                                        align="center"
-                                        valign="top"
-                                        style="padding: 0 22px;color: #ffffff; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 14px;  line-height: 14px; font-weight: 700; text-transform: uppercase;"
-                                      >
-                                        <span style="color: #ffffff;"
-                                          ><a
-                                            style="text-decoration: none; color: #ffffff;"
-                                            href="https://www.teo-intl.com/"
-                                            >Visit Our Website</a
-                                          ></span
-                                        >
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td
-                                        height="15"
-                                        style="height: 15px; line-height:15px;"
-                                      ></td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            height="72"
-                            style="height: 72px; line-height:72px;"
-                          ></td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-          <table id="section-events" align="center" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td
-                width="600"
-                align="center"
-                valign="top"
-                style="background: #468199;"
-              >
-                <table
-                  width="100%"
-                  align="center"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td align="center" valign="top" style="padding: 0 20px;">
-                      <table
-                        width="100%"
-                        align="center"
-                        cellpadding="0"
-                        cellspacing="0"
-                        border="0"
-                      >
-                        <tr>
-                          <td
-                            height="55"
-                            style="height: 55px; line-height:55px;"
-                          ></td>
-                        </tr>
-                        <tr>
-                          <td
-                            align="center"
-                            valign="top"
-                            style="color: #ffffff; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 30px;  line-height: 40px; font-weight: 700;"
-                          >
-                            News and Events
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            height="32"
-                            style="height: 32px; line-height:32px;"
-                          ></td>
-                        </tr>
-                        <tr>
-                          <td align="center" valign="top">
-                            <table
-                              align="center"
-                              cellpadding="0"
-                              cellspacing="0"
-                              border="0"
-                            >
-                              <tr>
-                                <td
-                                  width="324"
-                                  align="center"
-                                  valign="top"
-                                  style="background: #bae5ce;"
-                                >
-                                  <table
-                                    width="100%"
-                                    align="center"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                    border="0"
-                                  >
-                                    <tr>
-                                      <td
-                                        height="1"
-                                        style="height: 1px; line-height:1px;"
-                                      ></td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            height="22"
-                            style="height: 22px; line-height:22px;"
-                          ></td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <table
-                  width="100%"
-                  align="center"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td width="510" align="center" valign="top">
-                      <table
-                        width="100%"
-                        align="center"
-                        cellpadding="0"
-                        cellspacing="0"
-                        border="0"
-                      >
-                        <tr>
-                          <td
-                            align="center"
-                            valign="top"
-                            style="font-size: 0px !important;"
-                          >
-                            <!--[if (gte mso 9)|(IE)]><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"><tr><!
-                            [endif]-->[endif]--><!--[if (gte mso 9)|(IE)]><td width="255" align="center" valign="top" style="padding: 0 0 0 0;"><![endif]-->
-                            <div
-                              id="event1"
-                              style="width: 100%; display: inline-block; vertical-align: top; font-size: normal; max-width: 255px;"
-                              class="block"
-                            >
-                              <table
-                                width="100%"
-                                align="center"
-                                cellpadding="0"
-                                cellspacing="0"
-                                border="0"
-                              >
-                                <tr>
-                                  <td
-                                    align="center"
-                                    valign="top"
-                                    style="padding: 0 20px;"
-                                  >
-                                    <table
-                                      width="100%"
-                                      align="center"
-                                      cellpadding="0"
-                                      cellspacing="0"
-                                      border="0"
-                                    >
-                                      <tr>
-                                        <td
-                                          height="40"
-                                          style="height: 40px; line-height:40px;"
-                                        ></td>
-                                      </tr>
-                                      <tr>
-                                        <td
-                                          align="left"
-                                          valign="top"
-                                          style="color: #ffffff; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 24px;  line-height: 24px; font-weight: 700; text-transform: uppercase;"
-                                        >
-                                          24 march
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td
-                                          height="6"
-                                          style="height: 6px; line-height:6px;"
-                                        ></td>
-                                      </tr>
-                                      <tr>
-                                        <td
-                                          align="left"
-                                          valign="top"
-                                          style="color: #ffffff; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 16px;  line-height: 22px; font-weight: 700; text-transform: uppercase;"
-                                        >
-                                          kertyase miaserta deloerta
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td
-                                          height="15"
-                                          style="height: 15px; line-height:15px;"
-                                        ></td>
-                                      </tr>
-                                      <tr>
-                                        <td
-                                          align="left"
-                                          valign="top"
-                                          style="color: #ffffff; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 14px;  line-height: 22px; font-weight: 400;"
-                                        >
-                                          Miraserta rtyass natoqus egimte lmuese
-                                          feugiata lecertas enaser sricie
-                                          phaledat fena
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td
-                                          height="22"
-                                          style="height: 22px; line-height:22px;"
-                                        ></td>
-                                      </tr>
-                                      <tr>
-                                        <td align="center" valign="top">
-                                          <table
-                                            align="left"
-                                            cellpadding="0"
-                                            cellspacing="0"
-                                            border="0"
-                                          >
-                                            <tr>
-                                              <td
-                                                align="center"
-                                                valign="top"
-                                                style="border-radius: 4px; overflow: hidden;background: #ffffff;"
-                                              >
-                                                <table
-                                                  width="100%"
-                                                  align="center"
-                                                  cellpadding="0"
-                                                  cellspacing="0"
-                                                  border="0"
-                                                >
-                                                  <tr>
-                                                    <td
-                                                      height="15"
-                                                      style="height: 15px; line-height:15px;"
-                                                    ></td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td
-                                                      align="center"
-                                                      valign="top"
-                                                      style="padding: 0 22px;color: #19a859; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 14px;  line-height: 14px; font-weight: 700; text-transform: uppercase;"
-                                                    >
-                                                      <span
-                                                        style="color: #19a859;"
-                                                        ><a
-                                                          style="text-decoration: none; color: #468199;"
-                                                          href="index.html"
-                                                          >news1</a
-                                                        ></span
-                                                      >
-                                                    </td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td
-                                                      height="15"
-                                                      style="height: 15px; line-height:15px;"
-                                                    ></td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </table>
-                            </div>
-                            <!--[if (gte mso 9)|(IE)]></td><![endif]-->
-                            <!--[if (gte mso 9)|(IE)]><td width="255" align="center" valign="top" style="padding: 0 0 0 0;"><![endif]-->
-                            <div
-                            id="event2"
-                              style="width: 100%; display: inline-block; vertical-align: top; font-size: normal; max-width: 255px;"
-                              class="block"
-                            >
-                              <table
-                                width="100%"
-                                align="center"
-                                cellpadding="0"
-                                cellspacing="0"
-                                border="0"
-                              >
-                                <tr>
-                                  <td
-                                    align="center"
-                                    valign="top"
-                                    style="padding: 0 20px;"
-                                  >
-                                    <table
-                                      width="100%"
-                                      align="center"
-                                      cellpadding="0"
-                                      cellspacing="0"
-                                      border="0"
-                                    >
-                                      <tr>
-                                        <td
-                                          height="40"
-                                          style="height: 40px; line-height:40px;"
-                                        ></td>
-                                      </tr>
-                                      <tr>
-                                        <td
-                                          align="left"
-                                          valign="top"
-                                          style="color: #ffffff; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 24px;  line-height: 24px; font-weight: 700; text-transform: uppercase;"
-                                        >
-                                          26 march
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td
-                                          height="6"
-                                          style="height: 6px; line-height:6px;"
-                                        ></td>
-                                      </tr>
-                                      <tr>
-                                        <td
-                                          align="left"
-                                          valign="top"
-                                          style="color: #ffffff; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 16px;  line-height: 22px; font-weight: 700; text-transform: uppercase;"
-                                        >
-                                          viruiase byteseras miertasea
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td
-                                          height="15"
-                                          style="height: 15px; line-height:15px;"
-                                        ></td>
-                                      </tr>
-                                      <tr>
-                                        <td
-                                          align="left"
-                                          valign="top"
-                                          style="color: #ffffff; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 14px;  line-height: 22px; font-weight: 400;"
-                                        >
-                                          Basermaser kertyass natoqus egimte
-                                          dulmuese feugiata veras lecenaser
-                                          sricies phaledat
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td
-                                          height="22"
-                                          style="height: 22px; line-height:22px;"
-                                        ></td>
-                                      </tr>
-                                      <tr>
-                                        <td align="center" valign="top">
-                                          <table
-                                            align="left"
-                                            cellpadding="0"
-                                            cellspacing="0"
-                                            border="0"
-                                          >
-                                            <tr>
-                                              <td
-                                                align="center"
-                                                valign="top"
-                                                style="border-radius: 4px; overflow: hidden;background: #ffffff;"
-                                              >
-                                                <table
-                                                  width="100%"
-                                                  align="center"
-                                                  cellpadding="0"
-                                                  cellspacing="0"
-                                                  border="0"
-                                                >
-                                                  <tr>
-                                                    <td
-                                                      height="15"
-                                                      style="height: 15px; line-height:15px;"
-                                                    ></td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td
-                                                      align="center"
-                                                      valign="top"
-                                                      style="padding: 0 22px;color: #19a859; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 14px;  line-height: 14px; font-weight: 700; text-transform: uppercase;"
-                                                    >
-                                                      <span
-                                                        style="color: #19a859;"
-                                                        ><a
-                                                          style="text-decoration: none; color: #468199;"
-                                                          href="index.html"
-                                                          >news2</a
-                                                        ></span
-                                                      >
-                                                    </td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td
-                                                      height="15"
-                                                      style="height: 15px; line-height:15px;"
-                                                    ></td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </table>
-                            </div>
-                            <!--[if (gte mso 9)|(IE)]></td><!
-                            [endif]-->[endif]--><!--[if (gte mso 9)|(IE)]></tr></table><![endif]-->
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-                <table
-                  width="100%"
-                  align="center"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td
-                      height="70"
-                      style="height: 70px; line-height:70px;"
-                    ></td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-          <table id="section-socials" align="center" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td
-                width="600"
-                align="center"
-                valign="top"
-                style="background: #ffffff;"
-              >
-                <table
-                  width="100%"
-                  align="center"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td align="center" valign="top" style="padding: 0 20px;">
-                      <table
-                        width="100%"
-                        align="center"
-                        cellpadding="0"
-                        cellspacing="0"
-                        border="0"
-                      >
-                        <tr>
-                          <td
-                            height="68"
-                            style="height: 68px; line-height:68px;"
-                          ></td>
-                        </tr>
-                        <tr>
-                          <td
-                            align="center"
-                            valign="top"
-                            style="color: #3e3e3e; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 30px;  line-height: 30px; font-weight: 700;"
-                          >
-                            Contact Us
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            height="49"
-                            style="height: 49px; line-height:49px;"
-                          ></td>
-                        </tr>
-                        <tr>
-                          <td
-                            align="center"
-                            valign="top"
-                            style="line-height: 0px !important;"
-                          >
-                            <a href="mailto:info@teo-intl.com">
-                              <img
-                                src="https://www.bing.com/th?id=OIP.Fv5JlBWuKFiwqBO07qgSgAHaGh&w=114&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2"
-                               alt="icon-mail"
-                               width="87"
-                             />
-                           </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            height="41"
-                            style="height: 41px; line-height:41px;"
-                          ></td>
-                        </tr>
-                        <tr>
-                          <td
-                            align="center"
-                            valign="top"
-                            style="color: #3f3f3f; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 18px;  line-height: 26px; font-weight: 700; text-transform: uppercase;"
-                          >
-                          Njalsgade 76, 4th floor,
-                          2300 CPH
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            align="center"
-                            valign="top"
-                            style="color: #3f3f3f; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 18px;  line-height: 26px; font-weight: 700; text-transform: uppercase;"
-                          >
-                            Denmark
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            align="center"
-                            valign="top"
-                            style="color: #3f3f3f; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 18px;  line-height: 26px; font-weight: 700; text-transform: uppercase;"
-                          >
-                          +45 70 20 21 49
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            height="15"
-                            style="height: 15px; line-height:15px;"
-                          ></td>
-                        </tr>
-                        <tr>
-                          <td
-                            align="center"
-                            valign="top"
-                            style="color: #fdb917; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 18px;  line-height: 26px; font-weight: 700; text-transform: uppercase;"
-                          >
-                            <span style="color: #fdb917;"
-                              ><a
-                                style="text-decoration: none; color: #fdb917;"
-                                href="mailto:info@teo-intl.com"
-                                >info@teo-intl.com</a
-                              ></span
-                            >
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            height="33"
-                            style="height: 33px; line-height:33px;"
-                          ></td>
-                        </tr>
-                        <tr>
-                          <td align="center" valign="top">
-                            <table
-                              align="center"
-                              cellpadding="0"
-                              cellspacing="0"
-                              border="0"
-                            >
-                              <tr>
-                                <td
-                                  align="center"
-                                  valign="top"
-                                  style="font-size: 0px !important; padding: 0 3px 0 0;"
-                                >
-                                  <!--[if (gte mso 9)|(IE)]><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center"><tr><!
-                                  [endif]-->[endif]--><!--[if (gte mso 9)|(IE)]><td width="135" align="center" valign="top" style="padding: 0 0 0 0;"><![endif]-->
-                                  <div
-                                    style="width: 100%; display: inline-block; vertical-align: top; font-size: normal; max-width: 135px;"
-                                  >
-                                    <table
-                                      width="100%"
-                                      align="center"
-                                      cellpadding="0"
-                                      cellspacing="0"
-                                      border="0"
-                                    >
-                                      <tr>
-                                        <td
-                                          height="10"
-                                          style="height: 10px; line-height:10px;"
-                                        ></td>
-                                      </tr>
-                                      <tr>
-                                        <td align="center" valign="top">
-                                          <table
-                                            width="100%"
-                                            align="center"
-                                            cellpadding="0"
-                                            cellspacing="0"
-                                            border="0"
-                                          >
-                                            <tr>
-                                              <td
-                                                align="center"
-                                                valign="top"
-                                                style="line-height: 0px !important; padding: 0 0 0 0px;"
-                                              >
-                                                <a
-                                                  style="text-decoration: none; display: inline-block;"
-                                                  href="https://www.facebook.com/TEO.International/"
-                                                  ><img
-                                                    src="images/socials1.png"
-                                                    alt="socials1"
-                                                    width="42"
-                                                /></a>
-                                              </td>
-                                              <td
-                                                align="center"
-                                                valign="top"
-                                                style="line-height: 0px !important; padding: 0 0 0 0px;"
-                                              >
-                                                <a
-                                                  style="text-decoration: none; display: inline-block;"
-                                                  href="index.html"
-                                                  ><img
-                                                    src="images/socials2.png"
-                                                    alt="socials2"
-                                                    width="42"
-                                                /></a>
-                                              </td>
-                                              <td
-                                                align="center"
-                                                valign="top"
-                                                style="line-height: 0px !important; padding: 0 0 0 0px;"
-                                              >
-                                                <a
-                                                  style="text-decoration: none; display: inline-block;"
-                                                  href="index.html"
-                                                  ><img
-                                                    src="images/socials3.png"
-                                                    alt="socials3"
-                                                    width="42"
-                                                /></a>
-                                              </td>
-                                              <td
-                                                align="center"
-                                                valign="top"
-                                                style="line-height: 0px !important; padding: 0 0 0 0px;"
-                                              >
-                                                <a
-                                                  style="text-decoration: none; display: inline-block;"
-                                                  href="index.html"
-                                                  ><img
-                                                    src="images/socials4.png"
-                                                    alt="socials4"
-                                                    width="42"
-                                                /></a>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </div>
-                                  <!--[if (gte mso 9)|(IE)]></td><![endif]-->
-                                  <!--[if (gte mso 9)|(IE)]><td width="90" align="center" valign="top" style="padding: 0 0 0 0;"><![endif]-->
-                                  <!--[if (gte mso 9)|(IE)]></td><!
-                                  [endif]-->[endif]--><!--[if (gte mso 9)|(IE)]></tr></table><![endif]-->
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            height="53"
-                            style="height: 53px; line-height:53px;"
-                          ></td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-          <table id="section-footer" align="center" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td
-                width="600"
-                align="center"
-                valign="top"
-                style="background: #f5f5f5;"
-              >
-                <table
-                  align="center"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td
-                      width="430"
-                      align="center"
-                      valign="top"
-                      style="padding: 0 20px;"
-                    >
-                      <table
-                        width="100%"
-                        align="center"
-                        cellpadding="0"
-                        cellspacing="0"
-                        border="0"
-                      >
-                        <tr>
-                          <td
-                            height="50"
-                            style="height: 50px; line-height:50px;"
-                          ></td>
-                        </tr>
-                        <tr>
-                          <td
-                            align="center"
-                            valign="top"
-                            style="color: #606060; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 16px;  line-height: 26px; font-weight: 400;"
-                          >
-                            You're receiving this email because you signed up
-                            for TEO's newsletter or attended one of our events. You can
-                            <span style="color: #ff6453;"
-                              ><a
-                                style="text-decoration: underline; color: #ff6453;"
-                                class="unsubscribe"
-                                href="index.html"
-                                >unsubscribe</a
-                              ></span
-                            >
-                            from this email or change your email notifications.
-                            Online version is
-                            <span style="color: #ff6453;"
-                              ><a
-                                style="text-decoration: underline; color: #ff6453;"
-                                class="webversion"
-                                href="index.html"
-                                >here</a
-                              ></span
-                            >.
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            height="44"
-                            style="height: 44px; line-height:44px;"
-                          ></td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-          <table id="section-policy" align="center" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td
-                width="600"
-                align="center"
-                valign="top"
-                style="background: #ffffff;"
-              >
-                <table
-                  width="100%"
-                  align="center"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td align="center" valign="top" style="padding: 0 20px;">
-                      <table
-                        width="100%"
-                        align="center"
-                        cellpadding="0"
-                        cellspacing="0"
-                        border="0"
-                      >
-                        <tr>
-                          <td
-                            height="28"
-                            style="height: 28px; line-height:28px;"
-                          ></td>
-                        </tr>
-                        <tr>
-                          <td
-                            align="center"
-                            valign="top"
-                            style="color: #424242; font-family: 'Trebuchet MS', Helvetica, sans-serif; font-size: 16px;  line-height: 26px; font-weight: 700;"
-                          >
-                            TEO INTL. © 2022 |
-                            <span style="text-transform: uppercase;"
-                              ><span style="color: #424242;"
-                                ><a
-                                  style="text-decoration: none; color: #424242;"
-                                  href="index.html"
-                                  >Privacy policy</a
-                                ></span
-                              ></span
-                            >
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            height="26"
-                            style="height: 26px; line-height:26px;"
-                          ></td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-       _gaq.push(['_setAccount', 'UA-7078796-5']);
-       _gaq.push(['_trackPageview']);
-       (function() {
-         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
-         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-       })();
-    </script>
-    <!-- Google Tag Manager --><noscript
-      ><iframe
-        src="//www.googletagmanager.com/ns.html?id="
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe
-    ></noscript>
-    <script>
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-');
-    </script>
-    <!-- End Google Tag Manager -->
-  </body>
+  <body>
+    
+    <div id="newsletterContainer">
+      <div style="border:1px white solid ;background-color: #468199;">
+<!------------------------------------------ Section Banner ------------------------------------------------------>
+        <section id="section-banner">
+          <div id="teo-logoContainer">
+            <a
+            href="https://www.teo-intl.com/"
+            >
+            <img
+              class="teo-logo"
+              src="https://www.teo-intl.com/wp-content/uploads/2020/10/Teo_logo.png"
+              alt="logo"
+            />
+            </a>
+          </div>
+          <p class="underline"></p>
+        </section>
+  
+<!------------------------------------------ Section Services ------------------------------------------------------>
+        <section id="section-services">
+            <p class="heading servicesHeading">
+              Welcome!
+            </p>
+            <p class="paragraph">
+            TEO A/S (Talented Earth Organization) is a Danish software company, which was established in 2007.
+            We provide quality solutions for both private and public companies, 
+            and our core competencies lie in the development of complex systems and 
+            mobile app solutions.
+            </p>
+            <p class="underline welcome-underlined"></p>
+            <p class="heading servicesHeading">
+              Our Services
+            </p>
+            <p class="paragraph" style="margin-top:0px;">
+              TEO provides a wide range of services that cover all your IT needs. 
+              Our services help increase productivity, reduce cost, and optimize 
+              resources.
+              <ul>
+                <li>Fixed Term</li>
+                <li>Extended Team</li>
+                <li>Mobile Development</li>
+                <li>Software Development</li>
+              </ul>  
+            </p>
+          <button class="button button-services" onclick="location.href='https://www.teo-intl.com/services-en/'">click here for details</button>
+        </section>
+
+<!------------------------------------------ Section Case Studies ------------------------------------------------------>
+        <section id="section-casestudies">
+          <p class="underline welcome-underlined"></p>
+          <p class="heading caseStudiesHeading">
+            Our smart solutions make your ideas come true!
+          </p>
+          <section id="section-casestudy1">
+
+            <img class="casestudy1_img" src="images/casestudy1.png" alt="casestudy1">
+            <span style="font-weight: 700;display:block; margin:20px auto;margin-bottom: 0px;text-align: center;">PLOT</span>
+            <p class="paragraph" style="text-align:justify;">
+              <br/>
+              <span >
+              TEO designed and developed a parking app for Plot, which aims to provide more and better parking spaces which in turn means less traffic, less pollution, and fewer frustrations.
+              Our goal was to develop the app for both Android and iOS, and we wrote the back end in Microsoft .Net.
+              The app makes it easier for people to park their cars, and to report cars that are parked incorrectly
+            </span>
+            </p>
+            <button class="button button-caseestudy" onclick="location.href='https://www.teo-intl.com/services-en/'">More</button>
+          </section>
+        </section>
+
+<!------------------------------------------ Section Testimonials ------------------------------------------------------>
+        <section id="section-testimonials">
+          <p class="underline welcome-underlined"></p>
+          <p class="heading testimonialsHeading">
+            Testimonials
+          </p>
+          <img class="user_img" src="https://www.teo-intl.com/wp-content/uploads/2020/09/client-testominial-1.png">
+          <div>
+            <p class="name" style="color: #3d3d3d;font-size: 20px;font-weight: 500;">Claus Nyboe</p>
+            <p class="designation" style="color: #3d3d3d;font-size: 18px;font-weight: 6=500;">CEO, Auto IT</p>
+            <p class="cursor" style="color: #3d3d3d">''</p>
+            <p class="text" align="justify" style="color: #3d3d3d;font-size: 18px;font-weight: 500;">
+              All good cooperation requires trust. 
+              It is important that there is trust between those involved in the project that deadlines are met 
+              and that new resources are recruited quickly. All this works really well in TEO cooperation.
+          </p>
+          </div>
+        </section>
+    </div>
+ 
+<!------------------------------------------ Section Video ------------------------------------------------------>
+        <section id="section-video">
+            <img class="teoImg" src="https://scontent.fisb17-1.fna.fbcdn.net/v/t1.6435-9/40208716_1881706108539288_4087376945170350080_n.jpg?_nc_cat=110&amp;ccb=1-5&amp;_nc_sid=e3f864&amp;_nc_eui2=AeHQ4tc2BPp6MDYIVifDGowNVlRZWE0PgsJWVFlYTQ-Cwj5MGNTJbzkavhxPXXgIiCs&amp;_nc_ohc=lG3VHx-2DEUAX-z2MM3&amp;_nc_ht=scontent.fisb17-1.fna&amp;oh=00_AT_4VfgwKJOkOOxQRWX24ZADxETM2VQaeMNYqg7YiYzp5Q&amp;oe=6259D7F7" alt="img5" width="100%" style="width: 100%; max-width: 100%;">
+            <p class="heading videoHeading" >Best way to present</p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/68N_3ru8Dsk" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" bis_size="{&quot;x&quot;:477,&quot;y&quot;:2052,&quot;w&quot;:564,&quot;h&quot;:319,&quot;abs_x&quot;:477,&quot;abs_y&quot;:2052}"></iframe>
+            <button 
+              class="button button-video"
+              onclick="location.href='https://www.teo-intl.com/'">Visit Our Website</button>
+        </section>
+
+<!------------------------------------------ Section Webinar ------------------------------------------------------>
+        <section id="section-webinar">
+            <p class="heading webinarHeading">
+              Webinars
+            </p>
+            <p class="underline webinar-underlined"></p>
+            <table>
+              <tr>
+                <td>
+                  <p class="heading webinarSubHeading">24th MARCH</p>
+                  <p class="heading webinarParagraph">WEBINAR ON IT SERVICES</p>
+                  <p class="heading webinarSubParagraph">Description Text Here</p>
+                  <button class="button button-webinar" onclick="location.href='#'">NEWS1</button>
+                </td>
+              </tr>
+            </table>
+            </p>
+        </section>
+
+<!------------------------------------------ Section Social ------------------------------------------------------>
+        <section id="section-social">
+            <p class="heading socialHeading">
+              Contact Us
+            </p>
+            <a href="mailto:info@teo-intl.com">
+              <img class="icon_mail" src="https://cdn-icons.flaticon.com/png/512/2374/premium/2374449.png?token=exp=1647838309~hmac=9d6a0b50443b740fe02c92475f622956" alt="icon-mail" width="87">
+            </a>
+            <p class="address">NJALSGADE 76, 4TH FLOOR, 2300 CPH
+            <br/>DENMARK
+            <br/>+45 70 20 21 49</p>
+            <a class="mailURL" href="mailto:info@teo-intl.com">info@teo-intl.com</a>
+            <div id="socialIconsContainer">
+              <a href="#">
+                <img class="social-icon" src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1647838182~hmac=b1c036db5a55a59541b4163f5df3776b">
+              </a>
+              <a href="#">
+                <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png">
+              </a>
+              <a href="#">
+                <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+              </a>
+              <a href="#">
+                <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/174/174883.png">
+              </a>
+              
+            </div>
+        </section>
+
+<!------------------------------------------ Section Footer ------------------------------------------------------>
+        <section id="section-footer">
+            <p class="footerText" >
+              You're receiving this email because you signed up
+              for TEO's newsletter or attended one of our events. You can
+              <span><a class="footerLink" href="index.html">unsubscribe</a></span>
+              from this email or change your email notifications.
+              Online version is
+              <span><a class="footerLink" href="index.html">here</a></span>.
+            </p>
+        </section>
+
+<!------------------------------------------ Section Policy ------------------------------------------------------>
+        <section id="section-policy">
+          TEO INTL. © 2022 | PRIVACY POLICY
+        </section>
+
+  </div> 
+</body>
 </html>
