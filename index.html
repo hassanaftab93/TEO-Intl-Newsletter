@@ -14,6 +14,9 @@
         -ms-text-size-adjust:100%; 
         margin:0;
         padding:0; }
+        p{
+          cursor: default;
+        }
 /*----- Containers --------*/
       #newsletterContainer{
         margin: auto;
@@ -150,7 +153,7 @@
         color: #ffffff;
         font-size: 14px;
         line-height: 22px;
-        text-align: center;
+        text-align: justify;
         font-weight: 400;
         margin:10px 0px;
       }
@@ -211,7 +214,7 @@
         font-weight: 700;
         width: 45%;
         height: 45px;
-        margin: 0px auto;
+        margin: 0 auto;
         margin-top: 20px;
       }
 /*------ Images -------*/
@@ -282,6 +285,7 @@
       }
       td{
         padding: 25px;
+        vertical-align: top;
       }
       .footerLink{
         text-decoration: underline;
@@ -355,18 +359,14 @@
             </p>
             <p class="paragraph">
             TEO A/S (Talented Earth Organization) is a Danish software company, which was established in 2007.
-            We provide quality solutions for both private and public companies, 
-            and our core competencies lie in the development of complex systems and 
-            mobile app solutions.
+            We provide quality solutions for both private and public companies, and our core competencies lie in the development of complex systems and mobile app solutions.
             </p>
             <p class="underline welcome-underlined"></p>
             <p class="heading servicesHeading">
               Our Services
             </p>
             <p class="paragraph" style="margin-top:0px;">
-              TEO provides a wide range of services that cover all your IT needs. 
-              Our services help increase productivity, reduce cost, and optimize 
-              resources.
+              TEO provides a wide range of services that cover all your IT needs. Our services help increase productivity, reduce cost, and optimize resources.
               <ul>
                 <li>Fixed Term</li>
                 <li>Extended Team</li>
@@ -432,18 +432,38 @@
 <!------------------------------------------ Section Webinar ------------------------------------------------------>
         <section id="section-webinar">
             <p class="heading webinarHeading">
-              Webinars
+              WEBINARS
             </p>
             <p class="underline webinar-underlined"></p>
             <table>
               <tr>
                 <td>
-                  <p class="heading webinarSubHeading">24th MARCH</p>
-                  <p class="heading webinarParagraph">WEBINAR ON IT SERVICES</p>
-                  <p class="heading webinarSubParagraph">Description Text Here</p>
-                  <button class="button button-webinar" onclick="location.href='#'">WEBINAR LINK</button>
+                  <p class="heading webinarSubHeading">24 MARCH</p>
+                  <p class="heading webinarParagraph">WEBINAR on it services</p>
+                  <p class="heading webinarSubParagraph">
+                    Miraserta rtyass natoqus egimte lmuese feugiata 
+                    lecertas enaser sricie phaledat fena
+                  </p>
+                  
                 </td>
-                
+                <td>
+                  <p class="heading webinarSubHeading">25 MARCH</p>
+                  <p class="heading webinarParagraph">WEBINAR on tech</p>
+                  <p class="heading webinarSubParagraph">
+                    Miraserta rtyass natoqus egimte lmuese feugiata 
+                    lecertas enaser sricie phaledat fena
+                  </p>
+                  
+                </td>
+              </tr>
+              <!--Buttons for above Webinar Events-->
+              <tr>
+                <td>
+                  <button class="button button-webinar" onclick="location.href='#'">WEBINAR 1 LINK</button>
+                </td>
+                <td>
+                  <button class="button button-webinar" onclick="location.href='#'">WEBINAR 2 LINK</button>
+                </td>
               </tr>
             </table>
             </p>
@@ -455,27 +475,25 @@
               Contact Us
             </p>
             <a href="mailto:info@teo-intl.com">
-              <img class="icon_mail" src="https://cdn-icons.flaticon.com/png/512/2374/premium/2374449.png?token=exp=1647838309~hmac=9d6a0b50443b740fe02c92475f622956" alt="icon-mail" width="87">
+              <img class="icon_mail" src="./images/icon-mail.png" alt="icon-mail" width="87">
             </a>
             <p class="address">NJALSGADE 76, 4TH FLOOR, 2300 CPH
             <br/>DENMARK
             <br/>+45 70 20 21 49</p>
             <a class="mailURL" href="mailto:info@teo-intl.com">info@teo-intl.com</a>
             <div id="socialIconsContainer">
-
-              <a href="https://www.linkedin.com/company/teo-international/">
-                <img id="social-linkedin" class="social-icon" src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1647838182~hmac=b1c036db5a55a59541b4163f5df3776b">
+              <a id="socials-linkedin" href="https://www.linkedin.com/company/teo-international">
+                <img class="social-icon" src="./images/linkedin.png">
               </a>
-              <a href="#">
-                <img id="social-facebook" class="social-icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384053.png">
+              <a id="socials-fb" href="https://www.facebook.com/TEO.International/">
+                <img class="social-icon" src="./images/fb.png">
               </a>
-              <a href="#">
-                <img id="social-instagram" class="social-icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+              <a id="socials-insta" href="https://www.instagram.com/teo_intl/">
+                <img class="social-icon" src="./images/insta.png">
               </a>
-              <a href="#">
-                <img id="social-youtube" class="social-icon" src="https://cdn-icons-png.flaticon.com/512/174/174883.png">
+              <a id="socials-youtube" href="https://www.youtube.com/channel/UC8Ql6VgvOi52OnH-bK7Og4g">
+                <img class="social-icon" src="./images/yt.png">
               </a>
-              
             </div>
         </section>
 
@@ -484,16 +502,16 @@
             <p class="footerText" >
               You're receiving this email because you signed up
               for TEO's newsletter or attended one of our events. You can
-              <span><a class="footerLink" href="index.html">unsubscribe</a></span>
+              <span><a class="footerLink" href="#">unsubscribe</a></span>
               from this email or change your email notifications.
               Online version is
-              <span><a class="footerLink" href="index.html">here</a></span>.
+              <span><a class="footerLink" href="#">here</a></span>.
             </p>
         </section>
 
 <!------------------------------------------ Section Policy ------------------------------------------------------>
         <section id="section-policy">
-          TEO INTL. © 2022 | PRIVACY POLICY
+          TEO INTL. © 2022 | <span><a class="footerLink" href="#">PRIVACY POLICY</a></span>
         </section>
 
   </div> 

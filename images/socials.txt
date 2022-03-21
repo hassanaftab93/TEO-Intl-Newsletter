@@ -3,20 +3,15 @@ LINE In index.html
 Add 5 Social Images Files in Images folder, Names must be as follows
 
 1.  Email        :   icon-mail.png
-2.  LinkedIn     :   socials1.png
-3.  Facebook     :   socials2.png
-4.  Instagram    :   socials3.png
-5.  Youtube      :   socials4.png
+2.  LinkedIn     :   linkedin.png
+3.  Facebook     :   fb.png
+4.  Instagram    :   insta.png
+5.  Youtube      :   yt.png
 6.  Logo         :   logo.png
-7.  Promo        :   promo.png
+7.  Promo        :   promo.png - removed
 
 TODO:
     Include href links in images.
 
     Tech Video:
     https://www.youtube.com/watch?v=68N_3ru8Dsk
-
-Color:
-    Text:       #3d3d3d
-    Button:     #3fcecf
-    Background: #468199

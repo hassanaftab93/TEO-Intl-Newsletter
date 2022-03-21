@@ -11,15 +11,12 @@
     * section-casestudies
 
         * section-casestudy1
-        * section-casestudy2
-        * section-casestudy3
-        * section-casestudy4
 
     * section-testimonials
 
     * section-video
 
-    * section-events
+    * section-webinars
 
     * section-socials
 
