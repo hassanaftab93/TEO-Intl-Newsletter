@@ -26,4 +26,4 @@
 
 ## To get Current View:
 
-* [Click Here](https://github.com/hassanaftab93/TEO-Intl-Newsletter/blob/main/index.html)
+* [Click Here](https://htmlpreview.github.io/?https://github.com/hassanaftab93/TEO-Intl-Newsletter/blob/main/index.html)
