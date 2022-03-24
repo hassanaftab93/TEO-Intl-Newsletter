@@ -124,7 +124,7 @@
         font-weight: bold;
       }
       .videoHeading{
-        color: #ff6b5a;
+        color: #3d3d3d;
         font-size: 36px;
         line-height: 36px;
         text-transform: uppercase;
@@ -193,26 +193,26 @@
         font-family: 'Trebuchet MS', Helvetica, sans-serif;
       }
       .button-services{
-        background: #3fcecf;
+        background: #1f1f1f;
         font-weight: 400;
         width: 100%;
         height: 45px;
       }
       .button-caseestudy{
-        background: #3fcecf;
+        background: #1f1f1f;
         font-weight: 400;
         width: 35%;
         height: 45px;
       }
       .button-video{
-        background: #ff6453;
+        background: #1f1f1f;
         font-weight: 700;
         padding: 14px 23px;
         margin: 20px auto;
       }
       .button-webinar{
-        background: white;
-        color: #468199;
+        background: #1f1f1f;
+        color: #ffffff;
         font-weight: 700;
         width: 45%;
         height: 45px;
@@ -291,11 +291,14 @@
       }
       ul{
          color: #3d3d3d;
+         list-style-type: none;
          font-family: 'Trebuchet MS', Helvetica, sans-serif;
          font-size: 14px;
          line-height: 22px;
          font-weight: 400;
          display:inline-block;
+         padding: 0;
+         margin: 0;
       }
       td{
         padding: 25px;
@@ -380,9 +383,9 @@
             <p class="heading servicesHeading">
               Our Services
             </p>
-            <p class="paragraph" style="margin-top:0px;">
+            <p class="paragraph">
               TEO provides a wide range of services that cover all your IT needs. Our services help increase productivity, reduce cost, and optimize resources.
-              <ul>
+              <ul align="center">
                 <li>Fixed Term</li>
                 <li>Extended Team</li>
                 <li>Mobile Development</li>
@@ -410,10 +413,10 @@
             </span>
             <p class="paragraph" style="text-align:justify;">
               <br/>
-              <span >
+              <span>
               TEO designed and developed a parking app for Plot, which aims to provide more and better parking spaces which in turn means less traffic, less pollution, and fewer frustrations.
               Our goal was to develop the app for both Android and iOS, and we wrote the back end in Microsoft .Net.
-              The app makes it easier for people to park their cars, and to report cars that are parked incorrectly
+              <br><br>The app makes it easier for people to park their cars, and to report cars that are parked incorrectly
             </span>
             </p>
             <button class="button button-caseestudy" onclick="location.href='https://www.teo-intl.com/services-en/'">More</button>
@@ -431,11 +434,13 @@
             <p class="name" style="color: #3d3d3d;font-size: 20px;font-weight: 500;">Claus Nyboe</p>
             <p class="designation" style="color: #3d3d3d;font-size: 18px;font-weight: 6=500;">CEO, Auto IT</p>
             <p class="cursor" style="color: #3d3d3d">''</p>
-            <p class="text" align="justify" style="color: #3d3d3d;font-size: 18px;font-weight: 500;">
-              All good cooperation requires trust. 
-              It is important that there is trust between those involved in the project that deadlines are met 
-              and that new resources are recruited quickly. All this works really well in TEO cooperation.
-          </p>
+            <p class="text" align="center" style="color: #3d3d3d;font-size: 18px;font-weight: 500;">
+              <i>
+                All good cooperation requires trust.<br>
+                It is important that there is trust between those involved in the project that deadlines are met 
+                and that new resources are recruited quickly. All this works really well in TEO cooperation.
+              </i>
+            </p>
           </div>
         </section>
     </div>
@@ -443,11 +448,21 @@
 <!------------------------------------------ Section Video ------------------------------------------------------>
         <section id="section-video">
             <img class="teoImg" src="https://scontent.fisb17-1.fna.fbcdn.net/v/t1.6435-9/40208716_1881706108539288_4087376945170350080_n.jpg?_nc_cat=110&amp;ccb=1-5&amp;_nc_sid=e3f864&amp;_nc_eui2=AeHQ4tc2BPp6MDYIVifDGowNVlRZWE0PgsJWVFlYTQ-Cwj5MGNTJbzkavhxPXXgIiCs&amp;_nc_ohc=lG3VHx-2DEUAX-z2MM3&amp;_nc_ht=scontent.fisb17-1.fna&amp;oh=00_AT_4VfgwKJOkOOxQRWX24ZADxETM2VQaeMNYqg7YiYzp5Q&amp;oe=6259D7F7" alt="img5" width="100%" style="width: 100%; max-width: 100%;">
-            <p class="heading videoHeading" >Best way to present</p>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/68N_3ru8Dsk" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" bis_size="{&quot;x&quot;:477,&quot;y&quot;:2052,&quot;w&quot;:564,&quot;h&quot;:319,&quot;abs_x&quot;:477,&quot;abs_y&quot;:2052}"></iframe>
+            <p class="heading videoHeading" >Some of our History</p>
+            <iframe width="100%" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/68N_3ru8Dsk" 
+                    title="YouTube video player" 
+                    frameborder="1" 
+                    allow="accelerometer; clipboard-write; encrypted-media;" 
+                    allowfullscreen="" 
+                    bis_size="{&quot;x&quot;:477,&quot;y&quot;:2052,&quot;w&quot;:564,&quot;h&quot;:319,&quot;abs_x&quot;:477,&quot;abs_y&quot;:2052}">
+              </iframe>
             <button 
               class="button button-video"
-              onclick="location.href='https://www.teo-intl.com/'">Visit Our Website</button>
+              onclick="location.href='https://www.youtube.com/watch?v=68N_3ru8Dsk'"
+              >Watch on Youtube
+            </button>
         </section>
 
 <!------------------------------------------ Section Misc ------------------------------------------------------>
