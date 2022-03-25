@@ -24,6 +24,10 @@
 
     * section-policy
 
-## To get Current View:
+## To get Current View (Original Newsletter):
 
 * [Click Here](https://htmlpreview.github.io/?https://github.com/hassanaftab93/TEO-Intl-Newsletter/blob/main/index.html)
+
+## To get Current View (Original Newsletter):
+
+* [Click Here](https://htmlpreview.github.io/?https://github.com/hassanaftab93/TEO-Intl-Newsletter/blob/main/index_updated.html)
