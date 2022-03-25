@@ -51,18 +51,19 @@
       #section-services{
         margin:0;
         padding: 0px 60px;
-        padding-bottom: 50px;
+        padding-bottom: 5px;
         background-color: #e7e9ea;
       }
       #section-casestudies{
         background-color: #e7e9ea;
-        padding:0px 50px;
+        padding:0px 25px;
       }
       #section-casestudy1{
-        max-width: 250px;
+        max-width: 450px;
         background-color: #e7e9ea;
         text-align: justify;
         display: inline-block;
+        padding: 30px 10px;
       }
       #section-testimonials{
         padding: 10px 20px;
@@ -70,7 +71,7 @@
         background-color: #e7e9ea;
       }
       #section-video{
-        padding: 80px 20px;
+        padding: 35px 20px;
         background-color: #e7e9ea;
       }
       #section-webinar{
@@ -78,12 +79,13 @@
         padding: 40px;
       }
       #section-social{
-        padding: 40px 60px;
+        padding: 30px 60px;
+        padding-bottom: 10px;
         background-color: #d5d8da93;
       }
       #section-footer{
         background: #d5d8da93;
-        padding: 30px 70px;
+        padding: 15px 70px;
       }
       #section-policy{
         padding: 30px;
@@ -107,20 +109,20 @@
         font-size: 14px;
         line-height: 22px;
         font-weight: 400;
-        text-align: center;
+        
       }
       .servicesHeading{
         color: #3d3d3d;
-        font-size: 25px;
+        font-size: 32px;
       }
       .caseStudiesHeading{
         color: #3d3d3d;
-        font-size: 30px;
+        font-size: 32px;
         line-height: 40px;
       }
       .testimonialsHeading{
         color: #3d3d3d;
-        font-size: 1.5em;
+        font-size: 32px;
         font-weight: bold;
       }
       .videoHeading{
@@ -128,7 +130,6 @@
         font-family: 'Trebuchet MS', Helvetica, sans-serif;
         font-size: 36px;
         line-height: 36px;
-        text-transform: uppercase;
         margin-bottom:10px;
       }
       .webinarHeading{
@@ -167,10 +168,10 @@
       .address{
         color: #3f3f3f;
         font-family: 'Trebuchet MS', Helvetica, sans-serif;
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 15px;
+        line-height: 24px;
         font-weight: 700;
-        text-transform: uppercase;
+        
         text-align: center;
       }
       .footerText{
@@ -179,7 +180,6 @@
         font-size: 16px;
         line-height: 26px;
         font-weight: 400;
-        text-align: center;
       }
 /*------ Buttons -------*/
       .button{
@@ -239,6 +239,10 @@
       }
       .teo-logo{
         width: 80%; 
+      }
+      .teo-logo2{
+        width: 80%;
+        border-radius: 8%;
       }
       .teoImg{
         margin-bottom:30px;
@@ -302,7 +306,7 @@
          margin: 0;
       }
       td{
-        padding: 25px;
+        padding: 5px 25px;
         vertical-align: top;
       }
       .footerLink{
@@ -314,10 +318,9 @@
       #newsletterContainer {width: 80%;}
       .teo-logo{width: 80%;}
       .user_img{width: 60%;}
-      .user_img2{width: 40%;}
+      .user_img2{width: 65%;}
       .underline{width: 80%;}
       .button-caseestudy{width: 100%;}
-      #section-casestudy1 { padding:70px 20px; }
       .webinarSubHeading{text-align: center;}
       .webinarParagraph{text-align: center;}
       .webinarSubParagraph{text-align: center;}
@@ -349,8 +352,6 @@
     }
     </style>
   </head>
-
-
   <body>
     
     <div id="newsletterContainer">
@@ -368,6 +369,17 @@
             />
             </a>
           </div>
+          <div>
+            <a
+            href="#"
+            >
+            <img
+              class="teo-logo2"
+              src="./images/groupphoto.png"
+              alt="logo"
+            />
+            </a>
+          </div>
           <p class="underline2"></p>
         </section>
   
@@ -376,7 +388,7 @@
             <p class="heading servicesHeading">
               Welcome!
             </p>
-            <p class="paragraph">
+            <p class="paragraph" align="justify">
             TEO A/S (Talented Earth Organization) is a Danish software company, which was established in 2007.
             We provide quality solutions for both private and public companies, and our core competencies lie in the development of complex systems and mobile app solutions.
             </p>
@@ -387,15 +399,17 @@
         <section id="section-casestudies">
           <p class="underline welcome-underlined"></p>
           <p class="heading caseStudiesHeading">
-            Our smart solutions make your ideas come true!
+            Case Studies
           </p>
           <section id="section-casestudy1">
-            <img class="casestudy1_img" src="images/casestudy1.png" alt="casestudy1">
+            <img class="casestudy1_img" src="images/casestudy1.png" alt="casestudy1" onclick="location.href='https://www.teo-intl.com/services-en/'">
             <span style="font-weight: 700;
               display:block; 
               margin:20px auto;
               margin-bottom: 0px;
-              text-align: center;">
+              text-align: center; 
+              font-size: 20px;"
+              >
               PLOT
             </span>
             <p class="paragraph" style="text-align:justify;">
@@ -415,17 +429,16 @@
           <p class="heading testimonialsHeading">
             Testimonials
           </p>
-          <img class="user_img" src="https://www.teo-intl.com/wp-content/uploads/2020/09/client-testominial-1.png">
-          <div>
+          <img class="user_img" 
+                src="https://www.teo-intl.com/wp-content/uploads/2020/09/client-testominial-1.png" 
+                style="width:100px;height:100px;">
+          <div style="padding: 0px 30px;">
             <p class="paragraph" style="color: #3d3d3d;font-size: 20px;font-weight: 500;">Claus Nyboe</p>
             <p class="paragraph" style="color: #3d3d3d;font-size: 18px;font-weight: 500;">CEO, Auto IT</p>
-            <p class="paragraph" style="color: #3d3d3d">''</p>
-            <p class="paragraph" align="center" style="color: #3d3d3d;font-size: 18px;font-weight: 500;">
-              <i>
-                All good cooperation requires trust.<br>
+            <p class="paragraph" align="center" style="color: #3d3d3d;font-size: 14px;font-weight: 500;">
+              " All good cooperation requires trust.<br>
                 It is important that there is trust between those involved in the project that deadlines are met 
-                and that new resources are recruited quickly. All this works really well in TEO cooperation.
-              </i>
+                and that new resources are recruited quickly. All this works really well in TEO cooperation. "
             </p>
           </div>
         </section>
@@ -433,16 +446,15 @@
  
 <!------------------------------------------ Section Video ------------------------------------------------------>
         <section id="section-video">
-            <img class="teoImg" src="https://scontent.fisb17-1.fna.fbcdn.net/v/t1.6435-9/40208716_1881706108539288_4087376945170350080_n.jpg?_nc_cat=110&amp;ccb=1-5&amp;_nc_sid=e3f864&amp;_nc_eui2=AeHQ4tc2BPp6MDYIVifDGowNVlRZWE0PgsJWVFlYTQ-Cwj5MGNTJbzkavhxPXXgIiCs&amp;_nc_ohc=lG3VHx-2DEUAX-z2MM3&amp;_nc_ht=scontent.fisb17-1.fna&amp;oh=00_AT_4VfgwKJOkOOxQRWX24ZADxETM2VQaeMNYqg7YiYzp5Q&amp;oe=6259D7F7" alt="img5" width="100%" style="width: 100%; max-width: 100%;">
-            <p class="heading videoHeading" >Some of our History</p>
+            <!-- <img class="teoImg" src="https://scontent.fisb17-1.fna.fbcdn.net/v/t1.6435-9/40208716_1881706108539288_4087376945170350080_n.jpg?_nc_cat=110&amp;ccb=1-5&amp;_nc_sid=e3f864&amp;_nc_eui2=AeHQ4tc2BPp6MDYIVifDGowNVlRZWE0PgsJWVFlYTQ-Cwj5MGNTJbzkavhxPXXgIiCs&amp;_nc_ohc=lG3VHx-2DEUAX-z2MM3&amp;_nc_ht=scontent.fisb17-1.fna&amp;oh=00_AT_4VfgwKJOkOOxQRWX24ZADxETM2VQaeMNYqg7YiYzp5Q&amp;oe=6259D7F7" alt="img5" width="100%" style="width: 100%; max-width: 100%;"> -->
+            <p class="heading videoHeading" >TEO<br>Customers Overview</p>
             <iframe width="100%" 
                     height="315" 
                     src="https://www.youtube.com/embed/68N_3ru8Dsk" 
                     title="YouTube video player" 
                     frameborder="1" 
                     allow="accelerometer; clipboard-write; encrypted-media;" 
-                    allowfullscreen="" 
-                    bis_size="{&quot;x&quot;:477,&quot;y&quot;:2052,&quot;w&quot;:564,&quot;h&quot;:319,&quot;abs_x&quot;:477,&quot;abs_y&quot;:2052}">
+                    allowfullscreen="">
               </iframe>
             <button 
               class="button button-video"
@@ -453,7 +465,7 @@
 <!------------------------------------------ Section Misc ------------------------------------------------------>
         <section id="section-webinar">
             <p class="heading webinarHeading">
-              How we give back to the community
+              Community Efforts
             </p>
             <p class="underline webinar-underlined"></p>
             <table>
@@ -466,18 +478,18 @@
               </tr>
               <tr>
                 <td>
-                  <p class="heading webinarSubParagraph">
+                    <p class="webinarSubParagraph" align="justify">
                     TEO seeks to support different charities all over the world 
                     and now steps forward to collaborate with "Pak Sweet Home" to help them run this great mission successfully.<br>
                     <br>Pak Sweet Home is providing the foremost potential like medical assistance, shelter, 
                     food, education, character building, family environment, personal care, and many more to orphans.
-                  </p>
+                    </p>
                 </td>
               </tr>
               <!--Buttons for above Webinar Events-->
               <tr>
                 <td>
-                  <button class="button button-webinar" onclick="location.href='#'">More</button>
+                  <button class="button button-webinar" onclick="location.href='#'">Show More</button>
                 </td>
               </tr>
             </table>
@@ -492,8 +504,8 @@
             <a href="mailto:info@teo-intl.com">
               <img class="icon_mail" src="./images/icon-mail.png" alt="icon-mail" width="87">
             </a>
-            <p class="paragraph">NJALSGADE 76, 4TH FLOOR, 2300 CPH
-            <br/>DENMARK
+            <p class="address">Njalsgade 76, 4th Floor, 2300 CPH
+            <br/>Denmark
             <br/>+45 70 20 21 49</p>
             <a class="mailURL" href="mailto:info@teo-intl.com">info@teo-intl.com</a>
             <div id="socialIconsContainer">
@@ -514,18 +526,18 @@
 
 <!------------------------------------------ Section Footer ------------------------------------------------------>
         <section id="section-footer">
-            <p class="footerText" >
+            <p class="footerText" align="justify">
               You're receiving this email because you signed up
               for TEO's newsletter or attended one of our events. You can
               <span><a class="footerLink" href="#">unsubscribe</a></span>
               from this email or change your email notifications.
               Online version is
-              <span><a class="footerLink" href="#">here</a></span>.
+              <span><a class="footerLink" href="#">here</a></span>.<!--Enter link for archive of newsletter here-->
             </p>
         </section>
 <!------------------------------------------ Section Policy ------------------------------------------------------>
         <section id="section-policy">
-          TEO INTL. © 2022 | <span><a class="footerLink" href="#">PRIVACY POLICY</a></span>
+          TEO INTL. © 2022 | <span><a class="footerLink" href="https://www.teo-intl.com/privacy-policy/">PRIVACY POLICY</a></span>
         </section>
   </div> 
 </body>
