@@ -31,3 +31,7 @@
 ## To get Current View (Modified Newsletter):
 
 * [Click Here](https://htmlpreview.github.io/?https://github.com/hassanaftab93/TEO-Intl-Newsletter/blob/main/index_updated.html)
+
+## To get Current View (Revised Newsletter):
+
+* [Click Here](https://htmlpreview.github.io/?https://github.com/hassanaftab93/TEO-Intl-Newsletter/blob/main/index_updated2.html)
