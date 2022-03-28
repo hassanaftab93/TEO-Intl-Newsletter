@@ -35,3 +35,7 @@
 ## To get Current View (Revised Newsletter):
 
 * [Click Here](https://htmlpreview.github.io/?https://github.com/hassanaftab93/TEO-Intl-Newsletter/blob/main/index_updated2.html)
+
+## To get Current View (Mail Chimp Newsletter #1):
+
+* [Click Here](https://htmlpreview.github.io/?https://github.com/hassanaftab93/TEO-Intl-Newsletter/blob/main/index_mailchimp_export.html)
